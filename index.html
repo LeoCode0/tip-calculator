@@ -17,25 +17,54 @@
 
 <body>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <main class="main">
+    <div class="calculator">
+      <form class="calculator-container">
+        <div class="calculator__interface">
+          <div class="calculator__slot calculator__bill">
+            <p class="calculator__text">
+              Bill
+            </p>
+            <input type="number" id="bill_input" placeholder="0">
+          </div>
+          <div class="calculator__tip">
+            <p class="calculator__text">Select Tip %</p>
+            <div class="calculator__buttons">
+              <button type="button" class="calculator__tip-button">5%</button>
+              <button type="button" class="calculator__tip-button">10%</button>
+              <button type="button" class="calculator__tip-button">15%</button>
+              <button type="button" class="calculator__tip-button">25%</button>
+              <button type="button" class="calculator__tip-button">50%</button>
+              <input type="number" placeholder="Custom" id="custom_input">
+            </div>
+          </div>
+          <div class="calculator__slot calculator__people">
+            <p class="calculator__text">Number of People</p>
+            <input type="number" id="people_input" placeholder="0">
+          </div>
+        </div>
+        <div class="calculator__totals">
+          <div class="totals__section">
+            <div class="totals__concept">
+              <p class="principal">Tip Amount</p>
+              <p class="secondary">/ person</p>
+            </div>
+            <p class="totals__amount">$0.00</p>
+          </div>
+          <div class="totals__section">
+            <div class="totals__concept">
+              <p class="principal">Total</p>
+              <p class="secondary">/ person</p>
+            </div>
+            <p class="totals__amount">
+              $0.00
+            </p>
+          </div>
+          <button class="calculator__button calculator__button--reset" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </main>
   <script src="./src/js/index.js"></script>
 </body>
 
