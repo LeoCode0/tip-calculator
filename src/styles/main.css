@@ -211,7 +211,8 @@ button {
 
   .main__logo {
     position: absolute;
-    top: 60px;
+    top: 9vh;
+    padding: 0;
   }
 
   .calculator {
