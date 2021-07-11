@@ -51,8 +51,34 @@ button {
   flex-wrap: wrap;
 }
 
+.calculator-container button:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-cyan);
+  color: black;
+}
+
+.calculator-container input:hover {
+  cursor: pointer;
+  border: var(--dark-grayish-cyan-variation) 2px solid;
+}
+
 .calculator__slot {
   display: block;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.calculator__slot .icon {
+  position: absolute;
+  left: 10px;
+}
+
+.calculator__slot .icon img {
+  height: 20px;
 }
 
 .calculator__text {
@@ -61,7 +87,7 @@ button {
 }
 
 .calculator input {
-  border: 0;
+  border: transparent solid 2px;
   background-color: var(--light-grayish-cyan-variation);
   height: 4rem;
   padding: 10px 10px 10px 40px;
@@ -92,6 +118,12 @@ button {
   background-color: var(--very-dark-cyan);
   font-size: 2.4rem;
   font-weight: 700;
+  border: 0;
+}
+
+.button-active {
+  color: black;
+  background-color: var(--strong-cyan);
 }
 
 .calculator__buttons input {
@@ -104,12 +136,17 @@ button {
   margin: 25px 0;
 }
 
+.calculator__people .calculator__text {
+  display: flex;
+  justify-content: space-between;
+}
+
 .calculator__totals {
   background-color: var(--very-dark-cyan);
   width: 100%;
   height: auto;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .totals__section {
@@ -137,11 +174,21 @@ button {
 .calculator__button.calculator__button--reset {
   width: 100%;
   height: 40px;
+  margin: 10px 0 0 0;
   border: 0;
   border-radius: 5px;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: var(--very-dark-cyan);
   font-weight: 700;
   background-color: var(--strong-cyan);
+}
+
+.warning {
+  color: red;
+  display: none;
+}
+
+.show {
+  display: block;
 }

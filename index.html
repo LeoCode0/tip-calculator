@@ -25,7 +25,11 @@
             <p class="calculator__text">
               Bill
             </p>
-            <input type="number" id="bill_input" placeholder="0">
+            <div class="input-container">
+
+              <input type="number" id="bill_input" placeholder="0">
+              <span class="icon"><img src="./src/images/icon-dollar.svg" alt="dollar icon"></span>
+            </div>
           </div>
           <div class="calculator__tip">
             <p class="calculator__text">Select Tip %</p>
@@ -39,8 +43,11 @@
             </div>
           </div>
           <div class="calculator__slot calculator__people">
-            <p class="calculator__text">Number of People</p>
-            <input type="number" id="people_input" placeholder="0">
+            <p class="calculator__text">Number of People <span class="warning">Can't be zero</span></p>
+            <div class="input-container">
+              <input type="number" id="people_input" placeholder="0">
+              <span class="icon"><img src="./src/images/icon-person.svg" alt="person icon"></span>
+            </div>
           </div>
         </div>
         <div class="calculator__totals">
@@ -49,18 +56,18 @@
               <p class="principal">Tip Amount</p>
               <p class="secondary">/ person</p>
             </div>
-            <p class="totals__amount">$0.00</p>
+            <p class="totals__amount" id="tip">$0.00</p>
           </div>
           <div class="totals__section">
             <div class="totals__concept">
               <p class="principal">Total</p>
               <p class="secondary">/ person</p>
             </div>
-            <p class="totals__amount">
+            <p class="totals__amount" id="total">
               $0.00
             </p>
           </div>
-          <button class="calculator__button calculator__button--reset" type="reset">Reset</button>
+          <button class="calculator__button calculator__button--reset" type="reset" id="reset">Reset</button>
         </div>
       </form>
     </div>
