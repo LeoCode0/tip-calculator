@@ -35,7 +35,13 @@ button {
   background-color: var(--light-grayish-cyan);
   height: 100vh;
   width: 100%;
-  padding-top: 120px;
+}
+
+.main__logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 80px 0;
 }
 
 .calculator {
@@ -44,6 +50,7 @@ button {
   padding: 30px;
   background-color: var(--white);
   margin: 0 auto;
+  max-width: 900px;
 }
 
 .calculator-container {
@@ -191,4 +198,52 @@ button {
 
 .show {
   display: block;
+}
+
+/* desktop */
+
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .main__logo {
+    position: absolute;
+    top: 60px;
+  }
+
+  .calculator {
+    max-height: 500px;
+    border-radius: 25px;
+  }
+
+  .calculator-container {
+    justify-content: space-between;
+  }
+
+  .calculator__interface {
+    width: 50%;
+  }
+
+  .calculator__tip-button,
+  .calculator__buttons input {
+    width: 30%;
+  }
+
+  .calculator__totals {
+    width: 45%;
+    position: relative;
+    margin: 0;
+  }
+
+  .calculator__button.calculator__button--reset {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    left: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
