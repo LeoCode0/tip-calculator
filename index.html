@@ -30,7 +30,7 @@
             </p>
             <div class="input-container">
 
-              <input type="number" id="bill_input" placeholder="0">
+              <input type="number" id="bill_input" placeholder="0" min="0">
               <span class="icon"><img src="./src/images/icon-dollar.svg" alt="dollar icon"></span>
             </div>
           </div>
@@ -42,13 +42,13 @@
               <button type="button" class="calculator__tip-button">15%</button>
               <button type="button" class="calculator__tip-button">25%</button>
               <button type="button" class="calculator__tip-button">50%</button>
-              <input type="number" placeholder="Custom" id="custom_input">
+              <input type="number" placeholder="Custom" id="custom_input" min="0">
             </div>
           </div>
           <div class="calculator__slot calculator__people">
             <p class="calculator__text">Number of People <span class="warning">Can't be zero</span></p>
             <div class="input-container">
-              <input type="number" id="people_input" placeholder="0">
+              <input type="number" id="people_input" placeholder="0" min="1">
               <span class="icon"><img src="./src/images/icon-person.svg" alt="person icon"></span>
             </div>
           </div>
